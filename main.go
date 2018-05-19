@@ -42,10 +42,10 @@ func main() {
 	defer image2.Close()
 
 	//resize
-	n_second := resize.Resize(50, 50, second, resize.NearestNeighbor)
+	n_second := resize.Resize(40, 40, second, resize.NearestNeighbor)
 	//resize
 
-	offset := image.Pt(75, 75)
+	offset := image.Pt(80, 80)
 	b := first.Bounds()
 	image3 := image.NewRGBA(b)
 	draw.Draw(image3, b, first, image.ZP, draw.Src)
